@@ -35,5 +35,25 @@ To start by gathering ideas i started to look for inspirations whhich would help
 ### Could have
 
 
+## Proof of concept 
+
+ Proof of concept is a test that is done to see if an idea, technology or product can work the way it is intended. It involves creating a prototype or model that is tested to determine if it meets the desired objectives before investing further resources into its development.
+I have three concepts in mind, and I will choose one out of the three to work with further.
+
+## Concept 1 - Guess the lyrics
+My first concept is the guess the lyrics concept. i think this idea or design already exist. With this guess de lyrics game. Multiple users have to play to make it more fun. The user first log in with his or her name and waits still other players join to start. The user can also play it individual if there is no one joing the game. 
+
+###  Features 
+- A logging in with user name 
+- Users can see when other users are online;
+- Users  can see other user when typing 
+- Users can see when a user is typing. 
+- User can also see the time of the chat
+- Scores will be displayed . 
+
+
+Concept 2 - 
+
+
 
 
