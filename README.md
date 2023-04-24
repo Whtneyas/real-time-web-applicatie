@@ -41,7 +41,7 @@ To start by gathering ideas i started to look for inspirations whhich would help
 I have three concepts in mind, and I will choose one out of the three to work with further.
 
 ## Concept 1 - Guess the lyrics
-My first concept is the guess the lyrics concept. i think this idea or design already exist. With this guess de lyrics game. Multiple users have to play to make it more fun. The user first log in with his or her name and waits still other players join to start. The user can also play it individual if there is no one joing the game. 
+My first concept is tO guess the lyrics concept. i think this idea or design already exist. With this guess de lyrics game. Multiple users have to play to make it more fun. The user first log in with his or her name and waits still other players join to start. The user can also play it individual if there is no one joing the game. 
 
 ###  Features 
 - A logging in with user name 
@@ -52,7 +52,21 @@ My first concept is the guess the lyrics concept. i think this idea or design al
 - Scores will be displayed . 
 
 
-Concept 2 - 
+## Concept 2 - Quiz Geography 
+
+The second concept is a geographical quiz game whereby the user guesses the answer by choosing from multiple answers. First of all the user would have to log in with his or her username to join the quiz.After finishing the quiz the user will see his or her scores on a board 
+
+
+
+## Concept 3 - Scribbl game 
+My last concept was to create a scribbr game where user can guess a word by drawings of others and also create their own scribble game.
+
+
+
+## Chosen Concept
+
+
+
 
 
 
