@@ -63,9 +63,39 @@ My last concept was to create a scribbr game where user can guess a word by draw
 
 
 
-## Chosen Concept - Quiz geography 
+## Chosen Concept - Quiz app 
 
-My final choice will go for the Quiz geography. As i already made mention. I would like the user to first begin by logging in with a username of choice and then joining to start the quiz. The users can also interact with eachother by sending direct messages. 
+My final choice will be the Quiz app, where users can select a topic to be quizzed on. Additionally, there will be a chat system where users can join chatrooms on various topics such as history, games, music, etc. As previously mentioned, users will first need to log in with a username of their choice. Once logged in, they will be directed to the topic and chatroom page, where they can choose to join a chatroom on a specific topic or participate in a quiz of their choice."
+
+<img width="268" alt="image" src="https://user-images.githubusercontent.com/90154152/234077983-1d02d34d-a577-4b95-842a-d51580937a23.png">
+
+
+
+### Features 
+
+- Login with username 
+- User should be able to see other users when online of offline
+- User should be able to upload foto's from the chat room 
+- User should be able to see when another user is typing. 
+- User should see the time a message was sent. 
+- User should able to see other participants 
+- User should able to participate in a quiz. 
+- User should be able to participate in a group chat
+- See overview of all participants 
+
+
+## API - Trivia api 
+Link: https://opentdb.com/api_config.php
+
+In order to implement various quiz topics within my project, I plan on utilizing Trivia API, a website that allows you to generate an api based on a quiz topic . So in my case i am going to generate multiple api's for the different topics. 
+
+## Data modeling 
+
+
+<img width="521" alt="image" src="https://user-images.githubusercontent.com/90154152/234083042-1bec3664-1f6a-4212-81ee-af54c950dee9.png">
+
+
+
 
 
 
