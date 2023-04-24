@@ -63,7 +63,11 @@ My last concept was to create a scribbr game where user can guess a word by draw
 
 
 
-## Chosen Concept
+## Chosen Concept - Quiz geography 
+
+My final choice will go for the Quiz geography. As i already made mention. I would like the user to first begin by logging in with a username of choice and then joining to start the quiz. The users can also interact with eachother by sending direct messages. 
+
+
 
 
 
