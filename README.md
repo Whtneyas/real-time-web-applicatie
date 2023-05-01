@@ -98,8 +98,14 @@ In order to implement various quiz topics within my project, I plan on utilizing
 
 ## Designs in figma 
 To get a view of how the application will look. I made designs in figma so that when i start coding i won't have t think of the color i will be using or how it should look like. So i thought of making my designs reading before i start coding. 
-
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/90154152/235462118-395ff86e-c10d-4c0e-b7c0-334c542e5a4d.png">
+
+
+## Notes for myself
+
+* The socket.emit() : allows the client to send data to the server in real-time, without the need for a page refresh or additional HTTP requests.
+
+
 
 
 
