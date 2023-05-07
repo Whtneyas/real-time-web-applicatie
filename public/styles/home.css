@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter-VariableFont.ttf);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #1d1044;
+    --header-bg-color: #29175b;
+    --contrast-bg-color: #6447bd;
+}
+
+body {
+    font-family: 'Inter', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-color);
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    color: inherit;
+}
+
+
+/* code specifiek voor home pagina, deze even in ander bestand zetten denk ik */
+body > div {
+    display: grid;
+    grid-template-rows: minmax(40vh, 10rem) 1fr;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div {
+    background-color: var(--contrast-bg-color);
+    height: 6rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: .8rem;
+}
+
+header div span {
+    height: 20%;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    padding: 0 .2rem;
+    font-size: .6rem;
+}
+
+header div span:nth-of-type(2) {
+    background-color: green;
+    position: relative;
+    color: #fff;
+}
+
+/* dit moet die checkmark worden */
+header div span:nth-of-type(2)::after {
+    content: '';
+    position: absolute;
+    width: .5rem;
+    height: 100%;
+    background-color: green;
+    right: -.8rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto 2rem auto;
+    width: 95%;
+    max-width: 250px;
+}
+
+form label {
+    margin-bottom: .1rem;
+}
+
+form input[type="text"] {
+    padding: .5rem;
+    border-radius: .4rem;
+    width: 90%;
+    border: none;
+    border: solid 2px var(--contrast-bg-color);
+    background-color: var(--header-bg-color);
+    color: #fff;
+
+}
+
+form button[type="submit"] {
+    margin-top: 2rem;
+    padding: .5rem 1rem;
+    background-color: var(--contrast-bg-color);
+    border-radius: .4rem;
+    border: none;
+    width: 50%;
+    min-width: 8rem;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    body > div {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header div {
+        height: 10rem;
+    }
+
+    header div span {
+        font-size: 1.2rem;
+    }
+
+    form {
+        justify-content: center;
+    }
+}
