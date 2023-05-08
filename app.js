@@ -1,4 +1,4 @@
-
+const socket = io();
 
 const express = require('express');
 const app = express();
