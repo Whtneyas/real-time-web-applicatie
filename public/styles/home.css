@@ -121,6 +121,13 @@ form button[type="submit"] {
     max-width: 100%;
 }
 
+
+
+.chatsystem {
+    display:none;
+}
+
+
 @media screen and (min-width: 600px) {
     body > div {
         grid-template-rows: none;

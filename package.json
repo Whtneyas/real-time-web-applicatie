@@ -4,31 +4,31 @@
     "description": "A real time web application",
     "main": "app.js",
     "scripts": {
-      "start": "node app.js",
-      "dev": "nodemon app.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Whtneyas/real-time-web-applicatie.git"
+        "type": "git",
+        "url": "git+https://github.com/Whtneyas/real-time-web-applicatie.git"
     },
     "keywords": [
-      "realtime",
-      "chatroom"
+        "realtime",
+        "chatroom"
     ],
     "author": "Whitney",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/Whtneyas/real-time-web-applicatie/issues"
+        "url": "https://github.com/Whtneyas/real-time-web-applicatie/issues"
     },
     "homepage": "https://github.com/Whtneyas/real-time-web-applicatie.git#readme",
     "dependencies": {
-      "ejs": "^3.1.9",
-      "express": "^4.18.2",
-      "socket.io": "^4.6.1"
+        "axios": "^1.4.0",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "socket.io": "^4.6.1"
     },
     "devDependencies": {
-      "nodemon": "^2.0.22"
+        "nodemon": "^2.0.22"
     }
-  }
- 
+}

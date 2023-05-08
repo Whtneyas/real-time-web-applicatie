@@ -10,16 +10,18 @@
     <main>
         <section class="chatsystem">
             <h2>Chat</h2>
-            <ul></ul>
+           <ul id="messages"></ul>
 
             <form action="" id ="chat-form">
-                <input id="chat-input" type="text" autocomplete="off">
+                <input  type id="chat-input" type="text" autocomplete="off">
                 <button><span>Send</span></button>
             </form>
         </section>
 
 
         <%- include("./partials/footer") %>
+        <script src="/scripts/chat.js"></script>
+
 
     </main>
 

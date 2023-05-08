@@ -22,15 +22,27 @@
             <h1>QuizMe</h1>
         </header>
 
-        <form action="">
+        <form action="./chat" id="usernameForm">
             <label for="username">Enter username</label>
-            <input id="username" type="text" placeholder="Enter Username">
+            <input id="usernameInput" type="text" name="username" placeholder="Enter Username">
 
-            <button type="submit">Let's Play</button>
+            <button id="create-user-btn" type="submit">Let's Play</button>
         </form>
     </div>
 
+
+    <section class="chatsystem">
+        <h2>Chat</h2>
+       <ul id="messages"></ul>
+
+        <form action="" id ="chat-form">
+            <input  type id="chat-input" type="text" autocomplete="off">
+            <button><span>Send</span></button>
+        </form>
+    </section>
+
     <%- include("./partials/footer") %>
+    <script src="./scripts/username.js"></script>
 </body>
 
 </html>

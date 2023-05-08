@@ -1,37 +1,35 @@
+
+
 const express = require('express');
 const app = express();
-const http = require('http').createServer(app)
-const io = require("socket.io")(http)
-const path = require("path")
-const port = process.env.PORT || 4242
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
+const path = require('path');
+const port = process.env.PORT || 4242;
 
-
-//server client files
 app.use(express.static(path.resolve('public')));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-//set view engine 
-app.set("views", path.join(__dirname, "views"))
+let appRoutes = require('./routes/route');
+app.use('/', appRoutes);
 
-app.set("view engine", "ejs")
+io.on('connection', (socket) => {
+  console.log('A user connected');
 
-//Routing file 
-
-let appRoutes = require("./routes/route")
-app.use('/', appRoutes)
-
-io.on("connection", (socket) => {
-  console.log("a user connected");
-  socket.on("message", (message) => {
-    io.emit("message", message);
+  socket.on('new user', (username) => {
+    console.log(`New user joined: ${username}`);
   });
-  socket.on("disconnect", () => {
-    console.log("a user disconnected");
+
+  socket.on('message', (message) => {
+    io.emit('message', message);
+  });
+
+  socket.on('disconnect', () => {
+    console.log('A user disconnected');
   });
 });
-
 
 http.listen(port, () => {
-  console.log(`listening on http://localhost:${port}`)
+  console.log(`Server listening on http://localhost:${port}`);
 });
-
-
