@@ -7,18 +7,6 @@ This a real time web app
 
 For this course we have build a chat system which is also a real time web app. This course will help us to learn techniques to set up an open connection between the client and the srever. This will enable us to send dat in real time both ways at the same time. 
 
-## Inspirations 
-To start by gathering ideas i started to look for inspirations whhich would help me in genreating more ideas for my app. SO i went on a few websites to get inspired. The inspirations i found that caught my eyes are the image beloww. 
-
-![image](https://user-images.githubusercontent.com/90154152/232762158-a4eaf07e-7f7a-44bf-ba61-61bcf60711bd.png)
-
-![image](https://user-images.githubusercontent.com/90154152/232762271-a3b392c1-6c3d-47c6-8515-068753ae7230.png)
-
-![image](https://user-images.githubusercontent.com/90154152/232762320-efe52c47-4453-4f5d-852f-d1fcb78f762d.png)
-
-![image](https://user-images.githubusercontent.com/90154152/232762367-122fbc35-a499-4999-8d8f-c175c8333875.png)
-
-
 
 ## Features i would like to use 
  i am going to use the Moscow method . The moscow method is a techniyue used to categorize requiremts or features into four catergproes. We have the must - haves, should - haves, Could-haves, wont-haves. 
@@ -89,7 +77,28 @@ My final choice will be the Quiz app, where users can select a topic to be quizz
 ## API - Trivia api 
 Link: https://opentdb.com/api_config.php
 
-In order to implement various quiz topics within my project, I plan on utilizing Trivia API, a website that allows you to generate an api based on a quiz topic . So in my case i am going to generate multiple api's for the different topics. 
+In order to implement various quiz topics within my project, I plan on utilizing Trivia API, a website that allows you to generate an api based on a quiz topic . Because there wasn't much time on my side so i had to choose one topic to work on. SO i chose the general knowledge quiz. 
+
+
+## Realtime events used
+- connection: This event is used to connect the client to the server.
+- disconnect: This event is used to disconnect the client from the server.
+- message: This event is used to send a message from the client to the server.
+- answer: This event is used to send an answer from the client to the server.
+- history: This event is used to send the history of the chat from the server to the client.
+- typing: This event is used to send a indicator that a user is typing.
+- wrong answer: This event is used when the answer is wrong.
+- data: This event is used to send the data of the game to the client.
+- user: This event is used to send the user data to the server.
+- users: This event is used to send the users data to the client.
+- connect: This event checks if the user is connected to the server. If not it will go to the offline mode/page.
+- time : This event shows the time the message is sent from all users.
+- disconnected: This event checks if the user is disconnected from the server. If so it give a notification that the user left in the chat.
+- user-joined: This event is used when the the user joins the chat 
+- quizEnd: This event is used 
+
+
+
 
 ## Data modeling 
 
@@ -102,12 +111,7 @@ In order to implement various quiz topics within my project, I plan on utilizing
 To get a view of how the application will look. I made designs in figma so that when i start coding i won't have t think of the color i will be using or how it should look like. So i thought of making my designs reading before i start coding. 
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/90154152/235462118-395ff86e-c10d-4c0e-b7c0-334c542e5a4d.png">
 
-
-## Notes for myself
-
-* The socket.emit() : allows the client to send data to the server in real-time, without the need for a page refresh or additional HTTP requests.
-
-
+##
 
 
 
