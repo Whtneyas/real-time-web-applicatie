@@ -98,7 +98,7 @@ In order to implement various quiz topics within my project, I plan on utilizing
 - quizEnd: This event is used 
 
 
-
+## Data life circle 
 
 ## Data modeling 
 
