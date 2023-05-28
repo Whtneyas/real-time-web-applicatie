@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,17 +32,37 @@
 
 
     <section class="chatsystem">
-        <h2>Chat</h2>
-       <ul id="messages"></ul>
+      
 
-        <form action="" id ="chat-form">
-            <input  type id="chat-input" type="text" autocomplete="off">
-            <button><span>Send</span></button>
-        </form>
+        <div class="quiz-chat-container">
+            <div class="fixed-container">
+                <section id="quiz-container">
+                    <h2>GENERAL KNOWLEDGE QUIZ </h5>
+                        <div id="question-text"></div>
+                        <div id="choices-list"></div>
+                        <button id="next-question-btn">Next</button>
+                </section>
+            </div>
+
+
+
+            <section class="chat-container">
+                <h3>Chat here</h3>
+                <ul id="messages"></ul>
+
+                <div id="typing-indicator"></div>
+                <div class="form-container ">
+                    <form action="" id="chat-form">
+                        <input id="chat-input" type="text" autocomplete="off">
+                        <button><span>Send</span></button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
     </section>
-
     <%- include("./partials/footer") %>
-    <script src="./scripts/username.js"></script>
+
 </body>
 
 </html>
