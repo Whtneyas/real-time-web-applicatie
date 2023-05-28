@@ -1,6 +1,40 @@
-# real-time-web-applicatie
-<<<<<<< HEAD
-=======
+
+
+
+# General Knowledge Quiz 
+
+## Table of content
+- [General Knowledge Quiz](#general-knowledge-quiz)
+  * [Table of content](#table-of-content)
+  * [Course](#course)
+  * [Features i would like to use](#features-i-would-like-to-use)
+    + [Must have](#must-have)
+    + [Should have](#should-have)
+  * [Installation](#installation)
+    + [Install dependencies](#install-dependencies)
+    + [Start server](#start-server)
+    + [Express server](#express-server)
+  * [Socket.io](#socketio)
+    + [Nodemon](#nodemon)
+    + [EJS](#ejs)
+  * [Proof of concept](#proof-of-concept)
+  * [Concept 1 - Guess the lyrics](#concept-1---guess-the-lyrics)
+    + [Features](#features)
+  * [Concept 2 - Quiz Geography](#concept-2---quiz-geography)
+  * [Concept 3 - Scribbl game](#concept-3---scribbl-game)
+  * [Chosen Concept - Quiz app](#chosen-concept---quiz-app)
+    + [Features](#features-1)
+  * [API - Trivia api](#api---trivia-api)
+    + [Fetching trivia Api](#fetching-trivia-api)
+  * [Usage](#usage)
+  * [Realtime events used](#realtime-events-used)
+  * [Data life circle](#data-life-circle)
+  * [Data modeling](#data-modeling)
+  * [Designs in figma](#designs-in-figma)
+
+
+
+
 This a real time web app 
 
 ## Course
@@ -22,7 +56,80 @@ For this course we have build a chat system which is also a real time web app. T
   - Show when user is offline 
   - Show time when chat is sent 
   
-### Could have
+ ## Installation
+ The installation of this project is very easy. In this part you can read how to install this project. Just follow the steps below.
+
+ ###What you need to install for this project:
+
+  - Node.js
+  - NPM
+  - Express
+  - Socket.io
+  -  EJS
+  - Nodemon
+
+For deployment **Railway** was used and the main one. But Adaptable was also used for backup.
+
+Clone repository
+Git clone https://github.com/RainbowJM/real-time-web
+
+### Install dependencies
+To install the dependencies you have to run the following command in your terminal:  npm install node-js npm install express npm install socket.io npm install ejs npm install nodemon npm install supabase
+
+### Start server
+npm run dev
+
+### Express server
+When you have installed the Express dependencies you can start using it in the project.
+
+The code below is the basic code to start using express in your project. This will be in the app.js file.
+
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4242;
+
+app.use(express.static(path.resolve('public')));
+app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+
+http.listen(port, () => {
+    console.log(`Example app listening on  http://localhost:${port}`)
+});
+
+## Socket.io
+When you have installed the Socket.io dependencies you can start using it in the project.
+
+The code below is the basic code to start using socket.io in your project. This will be in the app.js file.
+
+`const io = require('socket.io')(http);
+const http = require('http').createServer(app);
+
+io.on('connection', (socket) => {
+	console.log('a user connected');
+});`
+
+### Nodemon
+When you have installed the Nodemon dependencies you can start using it in the project.
+
+The code below is the basic code to start using nodemon in your project. This will be in the package.json file.
+
+"scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+
+### EJS
+When you have installed the EJS dependencies you can start using it in the project.
+
+The code below is the basic code to start using EJS in your project. This will be in the app.js file.
+
+app.set("views", path.join(__dirname, "views"));
+app.set('view engine', 'ejs');
+Supabase
+When you have installed the Supabase dependencies you can start using it in the project.
+
+
 
 
 ## Proof of concept 
@@ -79,6 +186,35 @@ Link: https://opentdb.com/api_config.php
 
 In order to implement various quiz topics within my project, I plan on utilizing Trivia API, a website that allows you to generate an api based on a quiz topic . Because there wasn't much time on my side so i had to choose one topic to work on. SO i chose the general knowledge quiz. 
 
+### Fetching trivia Api 
+
+The  code below  fetches trivia general knowledge  questions from an API using the axios library. It then processes the response to extract the questions, correct answers, and choices. The first question is sent to a connected client through a socket connection. The current question index and all the questions are stored in the socket object. If there is an error, it logs an error message.
+
+<img width="437" alt="image" src="https://github.com/Whtneyas/real-time-web-applicatie/assets/90154152/d3145b93-6e0f-4cf7-9be6-fe7af574fc45">
+
+## Usage 
+
+ * Log in by inputting your username 
+  <img width="896" alt="image" src="https://github.com/Whtneyas/real-time-web-applicatie/assets/90154152/3506d035-19be-423f-9d81-77bf7a6a955c">
+  
+ * Chat with users in the chat 
+ <img width="857" alt="image" src="https://github.com/Whtneyas/real-time-web-applicatie/assets/90154152/10a7ec0e-3603-42ff-b9b1-a344fa044aa5">
+ 
+ * Play quiz 
+ <img width="634" alt="image" src="https://github.com/Whtneyas/real-time-web-applicatie/assets/90154152/11f469ab-d743-466b-bb14-9b957dfa883e">
+
+
+ * Display correct and wrong answers
+<img width="902" alt="image" src="https://github.com/Whtneyas/real-time-web-applicatie/assets/90154152/9b64ab94-d05f-4421-ba31-2c5294590c1a">
+
+
+
+
+  
+
+
+
+
 
 ## Realtime events used
 - connection: This event is used to connect the client to the server.
@@ -111,7 +247,10 @@ In order to implement various quiz topics within my project, I plan on utilizing
 To get a view of how the application will look. I made designs in figma so that when i start coding i won't have t think of the color i will be using or how it should look like. So i thought of making my designs reading before i start coding. 
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/90154152/235462118-395ff86e-c10d-4c0e-b7c0-334c542e5a4d.png">
 
-##
+
+
+
+
 
 
 
