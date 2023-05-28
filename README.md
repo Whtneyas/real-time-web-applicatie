@@ -50,11 +50,18 @@ For this course we have build a chat system which is also a real time web app. T
 - Chat with multiple users
 - Receive and send real time data. 
 - Display of usernames 
+- When user leave the chat 
+- Display Quiz question
+- Display multiple question 
+-
 
 ### Should have 
   - show when user is online 
   - Show when user is offline 
   - Show time when chat is sent 
+  - Score board 
+  - See the time a message is sent 
+  - Display when user is typing 
   
  ## Installation
  The installation of this project is very easy. In this part you can read how to install this project. Just follow the steps below.
@@ -235,6 +242,7 @@ The  code below  fetches trivia general knowledge  questions from an API using t
 
 
 ## Data life circle 
+
 
 ## Data modeling 
 
