@@ -254,14 +254,10 @@ The  code below  fetches trivia general knowledge  questions from an API using t
 
 
 ## Data life circle 
-<img width="257" alt="image" src="https://github.com/Whtneyas/real-time-web-applicatie/assets/90154152/923b26d0-c32d-412b-ba0d-1982fff037ac">
+<img width="500" alt="image" src="https://github.com/Whtneyas/real-time-web-applicatie/assets/90154152/923b26d0-c32d-412b-ba0d-1982fff037ac">
 
 
 
-## Data modeling 
-
-
-<img width="521" alt="image" src="https://user-images.githubusercontent.com/90154152/234083042-1bec3664-1f6a-4212-81ee-af54c950dee9.png">
 
 
 
