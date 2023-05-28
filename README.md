@@ -2,6 +2,8 @@
 
 
 # General Knowledge Quiz 
+<img width="911" alt="image" src="https://github.com/Whtneyas/real-time-web-applicatie/assets/90154152/c2c6fe17-ff54-42db-8704-99452d00fb7e">
+
 
 ## Table of content
 - [General Knowledge Quiz](#general-knowledge-quiz)
@@ -35,7 +37,6 @@
 
 
 
-This a real time web app 
 
 ## Course
 
@@ -167,9 +168,16 @@ My last concept was to create a scribbr game where user can guess a word by draw
 
 
 
-## Chosen Concept - Quiz app 
+## Chosen Concept - General knowledge Quiz app 
 
-My final choice will be the Quiz app, where users can select a topic to be quizzed on. Additionally, there will be a chat system where users can join chatrooms on various topics such as history, games, music, etc. As previously mentioned, users will first need to log in with a username of their choice. Once logged in, they will be directed to the topic and chatroom page, where they can choose to join a chatroom on a specific topic or participate in a quiz of their choice."
+
+My final choice for the project is to develop a comprehensive general knowledge quiz application. The application will provide users with the ability to create accounts and log in using their usernames. Once logged in, users will have the opportunity to participate in interactive quizzes while simultaneously engaging in real-time chat conversations.
+
+The quiz functionality will be designed to present questions in a multiple-choice format, offering users a range of options to choose from. Upon selecting an answer, the application will promptly provide immediate feedback, informing the user whether their response was correct or incorrect. This instant feedback mechanism aims to enhance the user experience and facilitate a sense of engagement and learning.
+
+In addition to the quiz component, the application will feature a chat system that allows users to communicate with each other in real-time. This chat functionality will enable users to discuss quiz questions, share insights, and interact with fellow participants. By combining the quiz and chat features, the application will create a dynamic and collaborative environment where users can test their knowledge, learn from one another, and foster a sense of community.
+
+With this gener
 
 <img width="268" alt="image" src="https://user-images.githubusercontent.com/90154152/234077983-1d02d34d-a577-4b95-842a-d51580937a23.png">
 
@@ -228,17 +236,19 @@ The  code below  fetches trivia general knowledge  questions from an API using t
 - disconnect: This event is used to disconnect the client from the server.
 - message: This event is used to send a message from the client to the server.
 - answer: This event is used to send an answer from the client to the server.
+- question: This event is for receiving questions from the server.
 - history: This event is used to send the history of the chat from the server to the client.
 - typing: This event is used to send a indicator that a user is typing.
 - wrong answer: This event is used when the answer is wrong.
 - data: This event is used to send the data of the game to the client.
 - user: This event is used to send the user data to the server.
 - users: This event is used to send the users data to the client.
-- connect: This event checks if the user is connected to the server. If not it will go to the offline mode/page.
 - time : This event shows the time the message is sent from all users.
 - disconnected: This event checks if the user is disconnected from the server. If so it give a notification that the user left in the chat.
 - user-joined: This event is used when the the user joins the chat 
-- quizEnd: This event is used 
+- user-left: This event is used when the user leaves the chat.
+- quizEnd: This event is use when thee user come to the end of the game 
+- nextquestion: This event is triggered when the client request the next question in the quiz.
 
 
 ## Data life circle 
@@ -274,5 +284,5 @@ To get a view of how the application will look. I made designs in figma so that 
 
 
 
->>>>>>> 351bfef1a9d442a1ae85ce6b8c4d50bd42185775
+
 
